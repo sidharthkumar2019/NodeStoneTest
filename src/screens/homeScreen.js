@@ -11,6 +11,7 @@ import {
 
 import {windowWidth} from '../utils/dimensions';
 import PushNotification from 'react-native-push-notification';
+import { LocatNotification } from '../utils/localPushController';
 
 
 /**
@@ -20,7 +21,10 @@ import PushNotification from 'react-native-push-notification';
 
 export const HomeScreen = ({ navigation }) => {
   const onPress = () => {
-    alert('Pressed!');
+    LocatNotification({
+      title: 'BIG RED BUTTON!!!',
+      message: 'you pressed the BIG RED BUTTON.'
+    });
   };
 
   return (
