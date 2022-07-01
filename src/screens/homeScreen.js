@@ -10,7 +10,6 @@ import {
 } from 'react-native';
 
 import {windowWidth} from '../utils/dimensions';
-import PushNotification from 'react-native-push-notification';
 import { LocatNotification } from '../utils/localPushController';
 
 
