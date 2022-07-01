@@ -6,6 +6,7 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {ProfileScreen} from '../screens/profileScreen';
 import { CalculatorScreen } from '../screens/calculatorScreen';
 import { ImageScreen } from '../screens/imageUploadScreen';
+import { TextScreen } from '../screens/textUploadSreen';
 
 /**
  * @author
@@ -19,6 +20,7 @@ export const AppStack = props => {
     <Tab.Navigator>
       <Tab.Screen name="Home" component={HomeScreen} />
       <Tab.Screen name="Image Screen" component={ImageScreen} />
+      <Tab.Screen name="Text Screen" component={TextScreen} />
       <Tab.Screen name="Calculator" component={CalculatorScreen} />
       <Tab.Screen name="Profile" component={ProfileScreen} />
     </Tab.Navigator>

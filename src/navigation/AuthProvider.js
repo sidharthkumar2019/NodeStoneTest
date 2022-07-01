@@ -12,6 +12,7 @@ export const AuthProvider = ({children}) => {
         user,
         setUser,
         signin: async (email, pass) => {
+          if (email == '' || pass == '') return
           try {
             await auth().signInWithEmailAndPassword(email, pass);
           } catch (error) {
@@ -30,6 +31,7 @@ export const AuthProvider = ({children}) => {
           }
         },
         signup: async (email, pass) => {
+          if (email == '' || pass == '') return
           try {
             await auth().createUserWithEmailAndPassword(email, pass);
           } catch (error) {
@@ -54,6 +56,7 @@ export const AuthProvider = ({children}) => {
           }
         },
         forgot: async email => {
+          if (email == '') return
           try {
             await auth().sendPasswordResetEmail(email);
             alert(

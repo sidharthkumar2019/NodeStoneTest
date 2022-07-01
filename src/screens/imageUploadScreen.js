@@ -65,7 +65,7 @@ export const ImageScreen = ({navigation}) => {
       await storage().ref(user.uid).putFile(uploadUri);
       Alert.alert('SUCCESS!', 'Your image has been uploaded successfully.');
 
-      let downloadUrl = await getCloudUrl();
+      const downloadUrl = await getCloudUrl();
       setCloudImg(downloadUrl);
 
     } catch (error) {
@@ -74,6 +74,15 @@ export const ImageScreen = ({navigation}) => {
 
     setImage(null);
   };
+
+  const handleViewImg = async() => {
+    try {
+      const downloadUrl = await getCloudUrl();
+      setCloudImg(downloadUrl);
+    } catch (error) {
+      console.log(error);
+    }
+  }
 
   return (
     <ScrollView style={{
@@ -92,14 +101,12 @@ export const ImageScreen = ({navigation}) => {
       <FormButton buttonTitle="Post" onPress={() => handlePost()} />
     
       <View style={styles.container}>
-        {cloudImg !== null ? 
-        (
+        <FormButton buttonTitle="View Image" onPress={() => handleViewImg()} />
+        {cloudImg !== null &&
           <Image 
           source={{uri: cloudImg}} 
           style={styles.image} 
           />
-        ) : 
-        <FormButton buttonTitle="View Image" onPress={() => handleViewImg()} />
         }
       </View>
     </ScrollView>
