@@ -64,7 +64,7 @@ export const CalculatorScreen = ({navigation}) => {
   const DropDownInput = ({label}) => {
     return (
         <View style={styles.item}>
-          <Text style={[styles.item, {fontSize: 10}]}>
+          <Text style={styles.text}>
             {label}:
           </Text>
     
