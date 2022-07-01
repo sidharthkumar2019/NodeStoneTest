@@ -4,6 +4,7 @@ import android.app.Application;
 import android.content.Context;
 import com.facebook.react.PackageList;
 import com.facebook.react.ReactApplication;
+import io.invertase.firebase.storage.ReactNativeFirebaseStoragePackage;
 import com.dieam.reactnativepushnotification.ReactNativePushNotificationPackage;
 import com.dieam.reactnativepushnotification.ReactNativePushNotificationPackage;
 import com.dieam.reactnativepushnotification.ReactNativePushNotificationPackage;

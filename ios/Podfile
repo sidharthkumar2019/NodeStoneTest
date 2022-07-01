@@ -21,6 +21,8 @@ target 'NordStoneTest' do
 
   pod 'react-native-splash-screen', :path => '../node_modules/react-native-splash-screen'
 
+  pod 'RNFBStorage', :path => '../node_modules/@react-native-firebase/storage'
+
   target 'NordStoneTestTests' do
     inherit! :complete
     # Pods for testing
