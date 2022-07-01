@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "69862235820",
+    "project_id": "nordstonetest",
+    "storage_bucket": "nordstonetest.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:69862235820:android:c8c2b93b4d2baeee87c909",
+        "android_client_info": {
+          "package_name": "com.nordstonetest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "69862235820-ho576ig3n20p03fcjc5g5k08an5acqsh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIgKQTPCR6gvnmo1apV2y5Sq0aaDgkpyI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "69862235820-ho576ig3n20p03fcjc5g5k08an5acqsh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
